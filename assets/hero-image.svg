@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+    <style>
+        .primary { fill: #2563eb; }
+        .secondary { fill: #1e40af; }
+        .accent { fill: #ffffff; }
+    </style>
+    <rect width="500" height="300" x="50" y="50" rx="15" fill="#f8fafc"/>
+    <rect width="400" height="40" x="100" y="80" rx="5" class="primary" opacity="0.1"/>
+    <rect width="350" height="40" x="100" y="140" rx="5" class="primary" opacity="0.1"/>
+    <rect width="450" height="40" x="100" y="200" rx="5" class="primary" opacity="0.1"/>
+    <circle cx="500" cy="100" r="30" class="primary"/>
+    <path d="M485 100 L495 110 L515 90" stroke="white" stroke-width="4" fill="none"/>
+    <g transform="translate(150, 280)">
+        <rect width="300" height="40" rx="5" class="secondary"/>
+        <text x="150" y="25" text-anchor="middle" fill="white" font-family="Arial" font-size="14">Texto Digitalizado</text>
+    </g>
+</svg>

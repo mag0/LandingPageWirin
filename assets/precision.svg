@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+    <style>
+        .primary { fill: #2563eb; }
+        .secondary { fill: #1e40af; }
+    </style>
+    <circle cx="40" cy="40" r="35" fill="none" stroke="#2563eb" stroke-width="3"/>
+    <circle cx="40" cy="40" r="25" fill="none" stroke="#2563eb" stroke-width="2"/>
+    <circle cx="40" cy="40" r="15" class="primary" opacity="0.2"/>
+    <circle cx="40" cy="40" r="5" class="secondary"/>
+    <path d="M40 5 L40 15 M40 65 L40 75 M5 40 L15 40 M65 40 L75 40" stroke="#2563eb" stroke-width="2"/>
+</svg>
