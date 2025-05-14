@@ -167,6 +167,55 @@ a:focus, button:focus {
   transform: scale(1.2);
 }
 
+.process-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #0d6efd;
+  z-index: 0;
+}
+
+.process-card {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.process-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #0d6efd;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.process-card:hover .icon-circle {
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* Responsive: en mobile, cambia a columna y oculta la línea horizontal */
+@media (max-width: 767.98px) {
+  .process-line {
+    display: none;
+  }
+  .process-card {
+    margin-bottom: 1rem;
+  }
+}
+
+
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
   .hero {
