@@ -16,13 +16,25 @@ h1,h2,h3,h4,h5,h6,p,span,div {
 html {
     scroll-behavior: smooth;
 }
+.btn-custom-primary{
+  background-color: #f58634;
+  color: white
+}
 
 /* Estilos para el hero section */
 .hero-content {
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.95) 0%, rgba(30, 64, 175, 0.75) 100%);
+  /* background: linear-gradient(135deg, rgba(37, 99, 235, 0.95) 0%, rgba(30, 64, 175, 0.75) 100%); */
   color: white;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 100%;
+  bottom: 100%;
+  margin-top: 220px;
+  right: 10%;
+  transform: translateY(-50%);
+  max-width: 500px;
+  padding: 2rem;
+  z-index: 2;
 }
 
 /* Ajuste para el logo */
@@ -37,7 +49,7 @@ main {
 
 /* Ajustes adicionales para el hero */
 .hero {
-  min-height: 80vh;
+  min-height: 70vh;
   overflow: hidden;
 }
 
@@ -46,27 +58,35 @@ main {
   backdrop-filter: blur(5px);
 }
 
-.hero-image {
+.hero {
+  min-height: 80vh;
   overflow: hidden;
+  position: relative;
+  background-image: url('./assets/WIRINLanding.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.2);
-  z-index: -1;
-
-  
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
 }
 
-.hero-image::before {
+/* .hero-image::before {
   width: 100%;
   height: 100%;
   content: "";
   background: rgba(0, 0, 0, 0.3) ;
   position: absolute;
   z-index: 10000;
-}
+} */
 
 /* Estilos personalizados para botones */
 .btn-primary {
@@ -144,6 +164,7 @@ section {
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #f58634;
 }
 
 /* Estilos para las tarjetas de precios */
